@@ -12,7 +12,7 @@ import lombok.Setter;
 public class SharedEmployee {
 	private String firstName;
 	private String lastName;
-	private String email; 
+	private String email;
 	@Override
 	public String toString() {
 		return "SharedEmployee [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";

@@ -9,16 +9,15 @@ import com.mycompany.hibernate_crud_demo.model.Employee;
 public class MyHibernateFactory {
 	
 	private static SessionFactory factory;
-	private static Session session;
 	
-	public static Session getMySession()
+	
+	public static SessionFactory getMySession()
 	{
 		factory=new Configuration().
 				configure("hibernate.cfg.xml").
 				addAnnotatedClass(Employee.class)
 				.buildSessionFactory();
-		session=factory.openSession();
-		return session;
+	return factory;
 				
 	}
 	
