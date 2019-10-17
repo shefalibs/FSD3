@@ -17,6 +17,18 @@
 		<servlet-class>comm.example.controller.AddLeagueServlet</servlet-class>
 	</servlet>
 	<servlet>
+		<servlet-name>AddCustomerServlet</servlet-name>
+		<display-name>AddCustomerServlet</display-name>
+		<description></description>
+		<servlet-class>comm.example.customer.AddCustomerServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CustomerView</servlet-name>
+		<display-name>CustomerView</display-name>
+		<description></description>
+		<servlet-class>comm.example.customer.view.CustomerView</servlet-class>
+	</servlet>
+	<servlet>
 		<servlet-name>ErrorServlet</servlet-name>
 		<display-name>ErrorServlet</display-name>
 		<description></description>
@@ -35,6 +47,14 @@
 	<servlet-mapping>
 		<servlet-name>AddLeagueServlet</servlet-name>
 		<url-pattern>/add_league.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddCustomerServlet</servlet-name>
+		<url-pattern>/add_customer.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CustomerView</servlet-name>
+		<url-pattern>/CustomerView.view</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>ErrorServlet</servlet-name>
