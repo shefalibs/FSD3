@@ -17,18 +17,6 @@
 		<servlet-class>comm.example.controller.AddLeagueServlet</servlet-class>
 	</servlet>
 	<servlet>
-		<servlet-name>AddCustomerServlet</servlet-name>
-		<display-name>AddCustomerServlet</display-name>
-		<description></description>
-		<servlet-class>comm.example.customer.AddCustomerServlet</servlet-class>
-	</servlet>
-	<servlet>
-		<servlet-name>CustomerView</servlet-name>
-		<display-name>CustomerView</display-name>
-		<description></description>
-		<servlet-class>comm.example.customer.view.CustomerView</servlet-class>
-	</servlet>
-	<servlet>
 		<servlet-name>ErrorServlet</servlet-name>
 		<display-name>ErrorServlet</display-name>
 		<description></description>
@@ -40,6 +28,20 @@
 		<description></description>
 		<servlet-class>comm.example.view.SuccessServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>AddLeagueViewServlet</servlet-name>
+		<display-name>AddLeagueViewServlet</display-name>
+		<description></description>
+		<servlet-class>comm.example.view.AddLeagueServlet</servlet-class>
+		<init-param>
+		
+		<param-name>season-list</param-name>
+		<param-value>Unknown,Autumn,Winter,Summer,Spring</param-value>
+		
+		
+		
+		</init-param>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>ListLeagueServlet</servlet-name>
 		<url-pattern>/list_leagues.view</url-pattern>
@@ -49,20 +51,16 @@
 		<url-pattern>/add_league.do</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>AddCustomerServlet</servlet-name>
-		<url-pattern>/add_customer.do</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>CustomerView</servlet-name>
-		<url-pattern>/CustomerView.view</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
 		<servlet-name>ErrorServlet</servlet-name>
 		<url-pattern>/error.view</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>SuccessServlet</servlet-name>
 		<url-pattern>/success.view</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddLeagueViewServlet</servlet-name>
+		<url-pattern>/add_league.view</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 

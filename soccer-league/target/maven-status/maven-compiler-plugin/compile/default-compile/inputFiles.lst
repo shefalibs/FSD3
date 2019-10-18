@@ -1,4 +1,6 @@
-C:\Users\b8ibmjava03\Documents\soccer-league\src\main\java\comm\example\model\League.java
-C:\Users\b8ibmjava03\Documents\soccer-league\src\main\java\comm\example\customer\AddCustomerServlet.java
-C:\Users\b8ibmjava03\Documents\soccer-league\src\main\java\comm\example\view\ListLeagueServlet.java
-C:\Users\b8ibmjava03\Documents\soccer-league\src\main\java\comm\example\controller\AddLeagueServlet.java
+E:\soccer-league\src\main\java\comm\example\controller\AddLeagueServlet.java
+E:\soccer-league\src\main\java\comm\example\view\SuccessServlet.java
+E:\soccer-league\src\main\java\comm\example\model\League.java
+E:\soccer-league\src\main\java\comm\example\view\ErrorServlet.java
+E:\soccer-league\src\main\java\comm\example\view\AddLeagueServlet.java
+E:\soccer-league\src\main\java\comm\example\view\ListLeagueServlet.java
